@@ -1,7 +1,7 @@
 {
   "name": "js-utils",
   "version": "1.0.0",
-  "description": "It's a JavaScript library that simplifies DOM manipulation, modeled after jQuery. With a lightweight and easy-to-use interface, it enables developers to easily select elements, handle events, and perform animations in the DOM with minimal code. Whether building a complex web app or a simple site, this library can help improve efficiency and focus on the code's logic and functionality rather than worrying about the details of DOM manipulation.",
+  "description": "This project is a collection of useful and versatile JavaScript utilities designed to make web development easier and more efficient. It includes functions for handling common tasks such as string manipulation, array sorting, and object validation, among others. With these utilities, developers can save time and streamline their code, allowing them to focus on building great applications.",
   "main": "index.ts",
   "scripts": {
     "compile:es6": "npx tsc --build configs/tsconfig.json",
