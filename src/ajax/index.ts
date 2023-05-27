@@ -1,1 +1,1 @@
-export { $get } from "./get";
+export { $ajax, defaultFetchInit, fetchInit } from "./ajax";
