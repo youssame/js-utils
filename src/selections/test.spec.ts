@@ -2,8 +2,8 @@ import {beforeEach, describe, expect, test} from '@jest/globals';
 import {JSDOM} from 'jsdom';
 import { $1, $n } from './';
 
-beforeEach(() => {
-});
+// beforeEach(() => {
+// });
 
 describe('Test ajax module', () => {
   test('Test $1', async () => {
