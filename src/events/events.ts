@@ -26,3 +26,8 @@ export const $when = (
     if (!elements.length) throw NOT_FOUND_ELEMENT_MESSAGE;
     elements.forEach(el => el.addEventListener(_event, _do));
 }
+
+// when the DOM has loaded
+export const $whenDocumentReady = (_do: (e: Event) => void) => {
+    document.addEventListener("DOMContentLoaded", _do);
+}

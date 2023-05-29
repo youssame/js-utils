@@ -2,7 +2,7 @@ import {describe, expect, test} from '@jest/globals';
 import {JSDOM} from 'jsdom';
 import { $when } from './';
 import { $1, $n } from '../selections';
-import { NOT_FOUND_ELEMENT_MESSAGE } from './events';
+import { $whenDocumentReady, NOT_FOUND_ELEMENT_MESSAGE } from './events';
 
 // beforeEach(() => {
 // });
@@ -18,7 +18,7 @@ describe('Test events module', () => {
       check = true;
     })
     // @ts-ignore
-    el!.click()
+    el!.click();
     expect(check).toBeTruthy();
   });
 
@@ -32,7 +32,7 @@ describe('Test events module', () => {
       check = true;
     })
     // @ts-ignore
-    el!.click()
+    el!.click();
     expect(check).toBeTruthy();
   });
 
@@ -104,5 +104,19 @@ describe('Test events module', () => {
         check = true;
       })
     }).toThrow(NOT_FOUND_ELEMENT_MESSAGE);
+  });
+
+  test('Execute a function when the DOM has loaded', async () => {
+    const dom = new JSDOM(`<!DOCTYPE html><button id="btn">Hello world</button>`);
+    global.document = dom.window.document;
+    let check = false;
+
+    // add event to the button when the document has loaded
+    $whenDocumentReady(() => {
+      check = true;
+    });
+    setTimeout(() => {
+      expect(check).toBeTruthy();
+    }, 2000);
   });
 });
