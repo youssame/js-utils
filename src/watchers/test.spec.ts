@@ -1,7 +1,7 @@
 import { describe, expect, jest, test } from '@jest/globals';
 import { JSDOM } from 'jsdom';
 import { $waitUntil } from './';
-import { $1, $n } from '../selections';
+import { $1 } from '../selections';
 
 // beforeEach(() => {
 // });

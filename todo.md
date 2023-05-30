@@ -14,3 +14,4 @@
 🔥 string interpolations
 ✅ unit tests
 🔥 publish lib to npm
+🔥 finish readme file
