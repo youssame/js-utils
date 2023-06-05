@@ -4,7 +4,7 @@ const extractionTypeRegEx : {
 } = {
     braces: new RegExp(/\{.*?\}/g),
     db_braces: new RegExp(/\{\{(.*?)\}\}/g),
-    brackets: new RegExp(/\((.*?)\)/g),
+    brackets: new RegExp(/\[(.*?)\]/g),
     parenthesis: new RegExp(/\((.*?)\)/g),
     quote: new RegExp(/'.*?'/g),
     double_quote: new RegExp(/\"(.*?)\"/g)
