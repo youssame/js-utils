@@ -17,7 +17,7 @@ npm i @youssame0/js-utils
 # Testing
 * npm
 ```sh
-npmtest
+npm test
 ```
 ## Contributing
 
