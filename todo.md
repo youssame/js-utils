@@ -10,8 +10,8 @@
 ✅ attach event to an DOM element
 ✅ function to verify that DOM is ready
 📝 watch function
-🔥 string extractions
-🔥 string interpolations
+✅ string extractions
+✅ string interpolations
 ✅ unit tests
 🔥 publish lib to npm
 🔥 finish readme file

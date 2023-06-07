@@ -1,13 +1,17 @@
 {
-    "name": "@youssame/js-utils",
-    "version": "0.0.1",
+    "name": "@youssame0/js-utils",
+    "version": "0.0.2",
     "description": "This project is a collection of useful and versatile JavaScript utilities designed to make web development easier and more efficient. It includes functions for handling common tasks such as string manipulation, array sorting, and object validation, among others. With these utilities, developers can save time and streamline their code, allowing them to focus on building great applications.",
     "main": "lib/es5/index.js",
     "module": "lib/es6/index.js",
     "sideEffects": false,
+    "private":false,
+    "publishConfig": {
+      "access": "public"
+    },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/youssame/utils.git"
+      "url": "git+https://github.com/youssame/js-utils"
     },
     "files": [
       "lib",
@@ -21,10 +25,10 @@
       "utils",
       "utilities"
     ],
-    "author": "Oleksandr Kocherhin",
+    "author": "Youssef AMEACHAQ",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/youssame/utils/issues"
+      "url": "https://github.com/youssame/js-utils/issues"
     },
-    "homepage": "https://github.com/youssame/utils#readme"
+    "homepage": "https://github.com/youssame/js-utils"
   }
